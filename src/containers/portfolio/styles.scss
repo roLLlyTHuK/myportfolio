@@ -48,13 +48,14 @@
         &__img-wrapper {
           height: 100%;
 
-          a {
+          .portfolio__content__cards__item__img {
             height: 100%;
 
             img {
               height: 100%;
               width: 100%;
               object-fit: cover;
+              object-position: top;
             }
           }
         }
@@ -141,7 +142,7 @@
   }
 }
 
-@media only screen and (min-width: 481px) and (max-width: 767px) {
+@media only screen and (min-width: 481px) and (max-width: 768px) {
   .portfolio__content__filter > li {
     font-size: 14px;
     padding: 10px 20px;

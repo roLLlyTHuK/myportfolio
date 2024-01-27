@@ -48,9 +48,9 @@ const Portfolio = () => {
               onMouseLeave={() => handlerHover(null)}
             >
               <div className="portfolio__content__cards__item__img-wrapper">
-                <a href="#">
+                <div className="portfolio__content__cards__item__img">
                   <img src={item.image} alt={item.name} />
-                </a>
+                </div>
               </div>
               <div className="overlay">
                 {index === hoveredData && (
@@ -58,8 +58,12 @@ const Portfolio = () => {
                     <h2>{item.name}</h2>
                     <p>{item.desctription}</p>
                     <div className="overlay__content__buttons">
-                      <button>Code</button>
-                      <button>View</button>
+                      <button onClick={() => window.open(item.codeUrl)}>
+                        Code
+                      </button>
+                      <button onClick={() => window.open(item.pageUrl)}>
+                        View
+                      </button>
                     </div>
                   </div>
                 )}
