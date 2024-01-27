@@ -40,9 +40,11 @@
         height: 366px;
         cursor: pointer;
         position: relative;
+        overflow: hidden;
 
         &:hover .overlay {
           opacity: 1;
+          top: 0;
         }
 
         &__img-wrapper {
@@ -62,14 +64,14 @@
 
         .overlay {
           position: absolute;
-          top: 0;
+          top: 100%;
           bottom: 0;
           right: 0;
           left: 0;
           height: 100%;
           width: 100%;
-          opacity: 0;
-          transition: 0.5s ease;
+          //   opacity: 0;
+          transition: all 0.8s cubic-bezier(0.28, 0.03, 0.23, 0.91);
           background-color: var(--yellow-theme-main-color);
           overflow: hidden;
 

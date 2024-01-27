@@ -18,6 +18,13 @@ html {
   font-size: 62.5%;
   height: 100%;
   font-family: 'Roboto Slab', sans-serif;
+  scrollbar-color: var(--yellow-theme-main-color) var(--yellow-theme-bg-color);
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--yellow-theme-main-color);
+  }
+  ::-webkit-scrollbar-track {
+    background-color: var(--yellow-theme-bg-color);
+  }
 }
 
 body {

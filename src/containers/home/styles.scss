@@ -27,20 +27,27 @@
   &__contact-me {
     display: flex;
     justify-content: center;
+    gap: 24px;
 
-    button {
+    button,
+    a {
       cursor: pointer;
-      padding: 10px 65px;
+      padding: 10px 40px;
       font-size: 2rem;
+      font-family: 'Roboto Slab', sans-serif;
       background: transparent;
       color: var(--yellow-theme-main-color);
       border: 1.5px solid var(--yellow-theme-main-color);
       border-radius: 4px;
-      font-weight: 500;
+      font-weight: 400;
       &:hover {
         background-color: var(--yellow-theme-main-color);
         color: var(--yellow-theme-bg-color);
       }
+    }
+
+    a {
+      text-decoration: none;
     }
   }
 }
@@ -50,11 +57,24 @@
     font-size: 3rem;
     line-height: 5rem;
   }
+  .home__contact-me {
+    button,
+    a {
+      font-size: 1.5rem;
+      padding: 10px 20px;
+    }
+  }
 }
 @media only screen and (min-width: 551px) and (max-width: 768px) {
   .home__text-wrapper h1 {
     font-size: 4rem;
     line-height: 6rem;
+  }
+  .home__contact-me {
+    button,
+    a {
+      padding: 10px 20px;
+    }
   }
 }
 @media only screen and (min-width: 769px) and (max-width: 990px) {
