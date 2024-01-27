@@ -6,6 +6,7 @@
   align-items: center;
   font-size: 1.2rem;
   position: sticky;
+  z-index: 9999;
 
   &__container {
     display: flex;
@@ -70,21 +71,23 @@
     left: -110%;
     opacity: 1;
     transition: all 0.5s ease;
+
     &.active {
-      background: #181818;
       left: 0;
       opacity: 1;
     }
+
     &__item {
       border-bottom: 1px solid #282828;
       margin: 0;
       padding: 20px 0;
+      background-color: #181818;
     }
   }
   .nav-icon {
     display: block;
     cursor: pointer;
     color: var(--yellow-theme-main-color);
-    padding-right: 20px;
+    padding-right: 10px;
   }
 }

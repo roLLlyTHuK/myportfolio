@@ -52,12 +52,14 @@ const NavBar = () => {
                 <Link
                   to={item.to}
                   className="navbar__container__menu__item__links"
+                  onClick={handlerToggleIcon}
                 >
                   {item.label}
                 </Link>
               </li>
             ))}
           </ul>
+
           <div className="nav-icon" onClick={handlerToggleIcon}>
             {toggleIcon ? <HiX size={30} /> : <FaBars size={30} />}
           </div>

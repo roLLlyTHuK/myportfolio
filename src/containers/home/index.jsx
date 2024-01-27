@@ -12,7 +12,7 @@ const Home = () => {
     <section id="home" className="home">
       <div className="home__text-wrapper">
         <h1>
-          Hello, I'm Andrii <br /> front end Developer{' '}
+          Hello, I'm Andrii <br /> Front End Developer{' '}
         </h1>
       </div>
       <Animate
