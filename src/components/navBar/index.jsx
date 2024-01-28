@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { FaBars, FaReact } from 'react-icons/fa';
+import { FaBars } from 'react-icons/fa';
 import { HiX } from 'react-icons/hi';
 import { NavLink } from 'react-router-dom';
 import { data } from '../../utils/navData';
@@ -16,7 +16,7 @@ const NavBar = () => {
       <nav className="navbar">
         <div className="navbar__container">
           <NavLink to={'/'} className="navbar__container__logo">
-            <FaReact size={30} />
+            <img src="../images/logo.svg" alt="logo" width={40} height={40} />
           </NavLink>
 
           <ul
