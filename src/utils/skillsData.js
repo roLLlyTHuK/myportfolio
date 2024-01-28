@@ -46,7 +46,7 @@ export const skillsData = [
     ],
   },
   {
-    label: 'OTHER',
+    label: 'UI/UX',
     data: [
       {
         skillName: 'Git',

@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import { FaBars, FaReact } from 'react-icons/fa';
 import { HiX } from 'react-icons/hi';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { data } from '../../utils/navData';
 import './styles.scss';
 
 const NavBar = () => {
   const [toggleIcon, setToggleIcon] = useState(false);
+
   const handlerToggleIcon = () => {
     setToggleIcon(!toggleIcon);
   };
@@ -14,22 +15,22 @@ const NavBar = () => {
     <div>
       <nav className="navbar">
         <div className="navbar__container">
-          <Link to={'/'} className="navbar__container__logo">
+          <NavLink to={'/'} className="navbar__container__logo">
             <FaReact size={30} />
-          </Link>
+          </NavLink>
 
           <ul
             className={`navbar__container__menu ${toggleIcon ? 'active' : ''}`}
           >
             {data.map((item, key) => (
-              <li key={key} className="navbar__container__menu__item">
-                <Link
+              <li key={key} className={`navbar__container__menu__item `}>
+                <NavLink
                   to={item.to}
                   className="navbar__container__menu__item__links"
                   onClick={handlerToggleIcon}
                 >
                   {item.label}
-                </Link>
+                </NavLink>
               </li>
             ))}
           </ul>

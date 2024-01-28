@@ -11,9 +11,8 @@ const Home = () => {
   return (
     <section id="home" className="home">
       <div className="home__text-wrapper">
-        <h1>
-          Hello, I'm Andrii <br /> Front End Developer{' '}
-        </h1>
+        <h1>Hello, I'm Andrii</h1>
+        <h2>Front End Developer</h2>
       </div>
       <Animate
         play

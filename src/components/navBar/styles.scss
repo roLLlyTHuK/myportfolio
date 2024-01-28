@@ -48,9 +48,13 @@
         }
 
         &__links {
-          color: var(--yellow-theme-main-color);
+          color: var(--yellow-theme-sub-text-color);
           text-decoration: none;
           padding: 0.5rem;
+
+          &.active {
+            color: var(--yellow-theme-main-color);
+          }
         }
       }
     }

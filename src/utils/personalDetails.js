@@ -7,13 +7,15 @@ export const personalDetails = [
     label: 'Address:',
     value: 'Kiyv, Ukraine',
   },
+
   {
     label: 'Email:',
     value: 'dovhaniuk.andriy@gmail.com',
   },
+
   {
-    label: 'Contact No:',
-    value: '+380 66 0745969',
+    label: 'Phone number:',
+    value: '+380 660745969',
   },
 ];
 
@@ -24,3 +26,18 @@ export const summary = {
 
   value3: `I'm always happy to collaborate with people and teams who genuinely support my passion for creating something new, distinctive, and useful. I really appreciate your visit to my portfolio!`,
 };
+
+export const socialLinks = [
+  {
+    name: 'linkedin',
+    link: 'https://www.linkedin.com/in/andrii-dovhaniuk-ua/',
+  },
+  {
+    name: 'github',
+    link: 'https://github.com/roLLlyTHuK',
+  },
+  {
+    name: 'telegram',
+    link: 'https://t.me/AndriyDovhaniuk',
+  },
+];

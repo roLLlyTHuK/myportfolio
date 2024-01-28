@@ -15,8 +15,8 @@ const Skills = () => {
           <div key={i} className="skills__content-wrapper__inner-content">
             <Animate
               play
-              duration={1.5}
-              delay={0.3}
+              duration={1}
+              delay={0}
               start={{ transform: 'translateX(-100%)', opacity: 0 }}
               end={{ transform: 'translateX(0px)', opacity: 1 }}
             >
