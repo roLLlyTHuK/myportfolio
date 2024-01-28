@@ -1,10 +1,42 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PageHeaderContent from '../../components/pageHeaderContent';
 import { IoMail } from 'react-icons/io5';
 import { Animate } from 'react-simple-animate';
 import './styles.scss';
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    description: '',
+  });
+
+  const [emailError, setEmailError] = useState('');
+
+  const handleChange = e => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+
+    // Валідація електронної адреси
+    if (e.target.name === 'email') {
+      const isValidEmail = validateEmail(e.target.value);
+      setEmailError(isValidEmail ? '' : 'Enter a valid email address');
+    }
+  };
+
+  const validateEmail = email => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  };
+
+  const handlerSubmit = e => {
+    e.preventDefault();
+    // Валідація форми
+    console.log('Дані для відправлення:', formData);
+  };
+
   return (
     <section id="contacts" className="contacts">
       <PageHeaderContent headerText="My Contacts" icon={<IoMail size={40} />} />
@@ -28,7 +60,14 @@ const Contact = () => {
           <div className="contacts__content__form">
             <div className="contacts__content__form__controls-wrapper">
               <div>
-                <input required type="text" name="name" className="inputName" />
+                <input
+                  required
+                  type="text"
+                  name="name"
+                  className="inputName"
+                  value={formData.name}
+                  onChange={handleChange}
+                />
                 <label htmlFor="name" className="nameLabel">
                   Name
                 </label>
@@ -36,13 +75,16 @@ const Contact = () => {
               <div>
                 <input
                   required
-                  type="email"
+                  type="text"
                   name="email"
-                  className="inputEmail"
+                  className={`inputEmail ${emailError ? 'invalid' : ''}`}
+                  value={formData.email}
+                  onChange={handleChange}
                 />
                 <label htmlFor="email" className="emailLabel">
                   Email
                 </label>
+                {emailError && <p className="error">{emailError}</p>}
               </div>
               <div>
                 <textarea
@@ -51,13 +93,15 @@ const Contact = () => {
                   name="description"
                   className="inputDescription"
                   rows="7"
+                  value={formData.description}
+                  onChange={handleChange}
                 />
                 <label htmlFor="description" className="descriptionLabel">
                   Description
                 </label>
               </div>
             </div>
-            <button>Submit</button>
+            <button onClick={handlerSubmit}>Submit</button>
           </div>
         </Animate>
       </div>
