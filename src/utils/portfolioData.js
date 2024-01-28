@@ -47,7 +47,7 @@ export const portfolioData = [
     codeUrl: 'https://github.com/roLLlyTHuK/phonebook',
     pageUrl: 'https://rolllythuk.github.io/phonebook',
     desctription:
-      'Individual project. Phonebook app with user authorisation, user filter, ability to add/remove user, connected to Swagger backend API. Stack: HTML, React, Redux, MUI.',
+      'Individual project. In development. Phonebook/Todos app with user auth,ability to add/remove/filter user/todos, connected to Swagger backend API. Stack: HTML, React, Redux, MUI.',
   },
   {
     id: 6,
