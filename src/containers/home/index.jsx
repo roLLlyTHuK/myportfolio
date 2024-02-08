@@ -24,7 +24,7 @@ const Home = () => {
         <div className="home__contact-me">
           <button onClick={handlerNavigateToContact}>Contact me</button>
           <a
-            href={require('../../utils/resume.pdf')}
+            href={require('../../utils/Andrii_Dovhaniuk_frontend.pdf')}
             download="CV_Frontend_Dovhaniuk_Andrii.pdf"
           >
             Download CV
