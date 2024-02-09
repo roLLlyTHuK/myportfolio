@@ -15,7 +15,7 @@ export const personalDetails = [
 
   {
     label: 'Phone number:',
-    value: '+380 660745969',
+    value: '+380 96 112-07-88',
   },
 ];
 
