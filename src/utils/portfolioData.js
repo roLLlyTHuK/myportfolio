@@ -69,6 +69,16 @@ export const portfolioData = [
     desctription:
       'Team project. A website with a pesponsive layout. Role: SCRUM Master, developer, gallery section/page animations. Stack: HTML, CSS, JavaScript, AOS, Swiper',
   },
+  {
+    id: 8,
+    name: 'Charivne Zerniako',
+    tag: 'Design',
+    image: '../images/charivne.webp',
+    codeUrl: 'https://github.com/roLLlyTHuK/cz_v2',
+    pageUrl: 'https://charivne-zerniatko.netlify.app',
+    desctription:
+      'Individual project. A landing page with a pesponsive layout for daycare center. Stack: HTML, CSS, JavaScript, AOS, Swiper',
+  },
 ];
 
 export const filterData = [
