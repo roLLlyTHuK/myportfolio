@@ -12,7 +12,7 @@ const Home = () => {
     <section id="home" className="home">
       <div className="home__text-wrapper">
         <h1>Hello, I'm Andrii</h1>
-        <h2>Front End Developer</h2>
+        <h2>Fullstack Developer</h2>
       </div>
       <Animate
         play
